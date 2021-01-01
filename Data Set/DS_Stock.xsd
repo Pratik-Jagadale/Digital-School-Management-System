@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Stock" targetNamespace="http://tempuri.org/DS_Stock.xsd" xmlns:mstns="http://tempuri.org/DS_Stock.xsd" xmlns="http://tempuri.org/DS_Stock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DSMS_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DSMS_DBConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DSMS.My.MySettings.GlobalReference.Default.DSMS_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Stock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Stock" msprop:Generator_UserDSName="DS_Stock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_Stock_Details" msprop:Generator_TableClassName="tbl_Stock_DetailsDataTable" msprop:Generator_TableVarName="tabletbl_Stock_Details" msprop:Generator_TablePropName="tbl_Stock_Details" msprop:Generator_RowDeletingName="tbl_Stock_DetailsRowDeleting" msprop:Generator_RowChangingName="tbl_Stock_DetailsRowChanging" msprop:Generator_RowEvHandlerName="tbl_Stock_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Stock_DetailsRowDeleted" msprop:Generator_UserTableName="tbl_Stock_Details" msprop:Generator_RowChangedName="tbl_Stock_DetailsRowChanged" msprop:Generator_RowEvArgName="tbl_Stock_DetailsRowChangeEvent" msprop:Generator_RowClassName="tbl_Stock_DetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" msprop:Generator_UserColumnName="Product_ID" type="xs:int" />
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" msprop:Generator_UserColumnName="Product_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_Added" msprop:Generator_ColumnVarNameInTable="columnStock_Added" msprop:Generator_ColumnPropNameInRow="Stock_Added" msprop:Generator_ColumnPropNameInTable="Stock_AddedColumn" msprop:Generator_UserColumnName="Stock_Added" type="xs:int" />
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:int" />
+              <xs:element name="Stock_Added_Date" msprop:Generator_ColumnVarNameInTable="columnStock_Added_Date" msprop:Generator_ColumnPropNameInRow="Stock_Added_Date" msprop:Generator_ColumnPropNameInTable="Stock_Added_DateColumn" msprop:Generator_UserColumnName="Stock_Added_Date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
